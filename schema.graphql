@@ -130,6 +130,8 @@ type LiquidityPositionSnapshot @entity {
 
 type Transaction @entity {
   id: ID! # txn hash
+  from: Bytes!
+  to: Bytes!
   blockNumber: BigInt!
   timestamp: BigInt!
   gasUsed: BigInt!
